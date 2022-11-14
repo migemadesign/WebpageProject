@@ -86,24 +86,28 @@
 		<image if="webvr.isenabled OR device.mobilevr">
 			<cube url="panos/1Frame_FinalColor.tiles/vr/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="32.156" atv="13.898" linkedscene="scene_2frame_finalcolor" />
 
 	</scene>
 
 	<scene name="scene_2Frame_FinalColor" title="2Frame_FinalColor" onstart="" havevrimage.mobilevr="false" havevrimage.no-mobilevr="true" thumburl="panos/2Frame_FinalColor.tiles/thumb.jpg" lat="" lng="" heading="">
 		
-		<control bouncinglimits="calc:image.cube ? true : false" />
+		<control bouncinglimits="true" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120.0" maxpixelzoom="2.0" fovmin="65.892452" fovmax="140.0" limitview="auto" hlookatmin="-180.0" hlookatmax="180.0" vlookatmin="-90.0" vlookatmax="90.0"/>
 
 		<preview url="panos/2Frame_FinalColor.tiles/preview.jpg" />
 
-		<image if="!(webvr.isenabled OR device.mobilevr)">
+		<image if="!(webvr.isenabled OR device.mobilevr)" prealign="null">
 			<cube url="panos/2Frame_FinalColor.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<image if="webvr.isenabled OR device.mobilevr">
 			<cube url="panos/2Frame_FinalColor.tiles/vr/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="48.151" atv="17.619" linkedscene="scene_3frame_finalcolor" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-168.726" atv="19.315" linkedscene="scene_1frame_finalcolor" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="1.385" atv="13.386" linkedscene="scene_8frame_finalcolor" />
 
 	</scene>
 
@@ -122,6 +126,8 @@
 		<image if="webvr.isenabled OR device.mobilevr">
 			<cube url="panos/3Frame_FinalColor.tiles/vr/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-67.177" atv="20.691" linkedscene="scene_2frame_finalcolor" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="91.370" atv="16.697" linkedscene="scene_4frame_finalcolor" />
 
 	</scene>
 
@@ -140,6 +146,9 @@
 		<image if="webvr.isenabled OR device.mobilevr">
 			<cube url="panos/4Frame_FinalColor.tiles/vr/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-87.917" atv="12.612" linkedscene="scene_3frame_finalcolor" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="25.329" atv="17.049" linkedscene="scene_5frame_finalcolor" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-44.470" atv="10.952" linkedscene="scene_6frame_finalcolor" />
 
 	</scene>
 
@@ -158,6 +167,8 @@
 		<image if="webvr.isenabled OR device.mobilevr">
 			<cube url="panos/5Frame_FinalColor.tiles/vr/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-170.271" atv="12.602" linkedscene="scene_4frame_finalcolor" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-125.669" atv="14.696" linkedscene="scene_6frame_finalcolor" />
 
 	</scene>
 
@@ -176,6 +187,10 @@
 		<image if="webvr.isenabled OR device.mobilevr">
 			<cube url="panos/6Frame_FinalColor.tiles/vr/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-70.346" atv="13.166" linkedscene="scene_7frame_finalcolor" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="83.054" atv="19.213" linkedscene="scene_5frame_finalcolor" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-142.806" atv="14.897" linkedscene="scene_3frame_finalcolor" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="150.927" atv="14.470" linkedscene="scene_4frame_finalcolor" />
 
 	</scene>
 
@@ -194,6 +209,9 @@
 		<image if="webvr.isenabled OR device.mobilevr">
 			<cube url="panos/7Frame_FinalColor.tiles/vr/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-67.890" atv="15.364" linkedscene="scene_8frame_finalcolor" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-150.390" atv="21.471" linkedscene="scene_2frame_finalcolor" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="92.999" atv="14.979" linkedscene="scene_6frame_finalcolor" />
 
 	</scene>
 
@@ -212,6 +230,8 @@
 		<image if="webvr.isenabled OR device.mobilevr">
 			<cube url="panos/8Frame_FinalColor.tiles/vr/pano_%s.jpg" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="102.345" atv="13.480" linkedscene="scene_7frame_finalcolor" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="156.343" atv="12.063" linkedscene="scene_2frame_finalcolor" />
 
 	</scene>
 
